@@ -1,0 +1,13 @@
+# phpstorm project files
+/.idea
+
+/.vscode
+
+# windows thumbnail cache
+Thumbs.db
+
+.htaccess
+
+.env
+
+

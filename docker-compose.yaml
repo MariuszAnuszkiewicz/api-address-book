@@ -1,0 +1,43 @@
+version: '3.9'
+
+services:
+  # PHP with server apache service
+  php:
+    build:
+      context: .
+      dockerfile: dockerfiles/php/Dockerfile
+    container_name: php-container
+    ports:
+      - 8101:8101
+    restart: always
+
+  # MySQL service
+  db:
+    build:
+      context: .
+      dockerfile: dockerfiles/db/Dockerfile
+    container_name: db-container
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+    volumes:
+      - ./app/api/vendor/db-data:/var/lib/mysql
+    ports:
+      - 3306:3306
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  # phpMyAdmin service
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    networks:
+      - app-network
+    container_name: phpmyadmin-container
+    ports:
+      - 8081:80
+    depends_on:
+      - db
+
+networks:
+  app-network:
