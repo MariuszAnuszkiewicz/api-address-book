@@ -12,14 +12,14 @@ CREATE TABLE IF NOT EXISTS `users`(
 
 
 INSERT INTO `users` (`id`, `name`, `surname`, `phone`, `email`) VALUES
-(NULL, 'Giannis', 'Kotsiras', '735095091', 'kostu@gmail.com'),
+(NULL, 'Giannis', 'Kotsiras', '990159612', 'kostu@gmail.com'),
 (NULL, 'Daniel', 'Mancini', '873004621', 'danielx4@gmail.com'),
-(NULL, 'Romualdas', 'Jansonas', '119836134', 'damunidbee@gmail.com'),
-(NULL, 'Simon', 'Olsson', '008342038', 'olssonadk@gmail.com'),
-(NULL, 'Camil', 'Jebara', '796359556', 'camilter89@gmail.com'),
-(NULL, 'Patrick', 'Hoban', '885937168', 'patricxxw@gmail.com'),
+(NULL, 'Romualdas', 'Jansonas', '629617386', 'damunidbee@gmail.com'),
+(NULL, 'Simon', 'Olsson', '993448645', 'olssonadk@gmail.com'),
+(NULL, 'Camil', 'Jebara', '840926952', 'camilter89@gmail.com'),
+(NULL, 'Patrick', 'Hoban', '966179485', 'patricxxw@gmail.com'),
 (NULL, 'Tiago', 'Gouveia', '998234283', 'tiagomago@gmail.com'),
 (NULL, 'Jan', 'Kuchta', '524371928', 'jankuchpz91@gmail.com'),
-(NULL, 'Jordan', 'Veretout', '083625514', 'mjordangv34@gmail.com'),
+(NULL, 'Jordan', 'Veretout', '475818335', 'mjordangv34@gmail.com'),
 (NULL, 'Maximilian', 'Eggestein', '762193707', 'maximilianqwv4@gmail.com');
 
