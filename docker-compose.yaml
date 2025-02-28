@@ -21,7 +21,7 @@ services:
       MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
       MYSQL_DATABASE: ${DATABASE_NAME}
     volumes:
-      - ./app/api/vendor/db-data:/var/lib/mysql
+      - ./app/api/tmp:/var/lib/mysql
     ports:
       - 3306:3306
     restart: unless-stopped
